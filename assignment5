@@ -1,0 +1,23 @@
+
+
+with open("my_file.txt", "w") as file:
+    file.write("This is the first line of text.\n")
+    file.write("Here is a number: 42\n")
+    file.write("And this is the third line.\n")
+
+with open("my_file.txt", "r") as file:
+    content = file.read()
+    print("Contents of my_file.txt:")
+    print(content)
+
+
+with open("my_file.txt", "a") as file:
+    file.write("This is an additional line 1.\n")
+    file.write("Adding another line, number 7.\n")
+    file.write("Finally, this is the last line.\n")
+
+
+with open("my_file.txt", "r") as file:
+    updated_content = file.read()
+    print("Updated contents of my_file.txt:")
+    print(updated_content)
